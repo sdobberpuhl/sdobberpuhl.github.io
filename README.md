@@ -1,2 +1,0 @@
-# sdobberpuhl.github.io
-portfolio
