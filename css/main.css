@@ -229,6 +229,15 @@ a:hover {
 	width: 61%;
 }
 
+#socialVideo{
+	width: 30%;
+}
+
+#socialImg {
+	width: 68%;
+}
+
+
 /*about page*/
 #aboutSec {
 	max-width: 1600px;
@@ -300,6 +309,15 @@ div.video{
 	h1 {
 		margin: .5rem 0;
 	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	h4 {
+		font-size: 1.1em;
+	}
+	
 	.work {
 		order: 2;
 		width: auto;
@@ -355,10 +373,21 @@ div.video{
 	#adImg {
 		width: 100%;
 	}
+	
 	#adVideo{
 		width: 100%;
 		margin-top: 2%;
 	}
+	
+	#socialVideo{
+		width: 100%;
+		margin-top: 2%;
+	}
+
+	#socialImg {
+		width: 100%;
+	}
+
 
 }
 
@@ -372,6 +401,15 @@ div.video{
 		font-size: 1.25em;
 		line-height: 1.1;
 	}
+	
+	h3 {
+		font-size: 1.8em;
+	}
+	
+	h4 {
+		font-size: 1em;
+	}
+	
 	
 	#aboutSec {
 		max-width: 1600px;
