@@ -87,9 +87,8 @@ p {
   	order: 1;
 }
 
-.name-img >img{
+.name-img > a img{
 	width: 10%;
-	order: 1;
 	margin-top: 1em;
 }
 
