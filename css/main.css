@@ -124,7 +124,7 @@ a:hover {
 	flex-flow: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 1em 0 0 0 0;
+	margin: 0;
 }
 
 .projectWide {
@@ -232,6 +232,10 @@ a:hover {
 	align-content: center;
 }
 
+.projectImgs {
+	margin: 1em 0 0 0;
+}
+
 #brandImgs{
 	width: 100%;
 	max-width: 1600px;
@@ -239,6 +243,7 @@ a:hover {
 	flex-flow: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin: 1em 0 0 0;
 }
 
 #adVideo{
