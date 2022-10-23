@@ -1,42 +1,45 @@
-/* font-family: 'Suranna', serif;
-font-family: 'Muli', sans-serif;
-font-family: 'Nunito Sans', sans-serif; */
+/*  font-family: 'DM Serif Text', serif;
+    font-family: 'Lexend Deca', sans-serif; */
 
 
 
 body {
-    margin: 60px auto;
+    margin: auto;
+	margin-bottom: 60px;
     width: 80%;
-    font-family: 'Muli', sans-serif;
-    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+	padding: 0;
 }
 
-h1 > a:hover{
+h1 {
     color: #333;
+	font-size: 2.3em;
 }
 
 h2 {
-    font-family: 'DM Serif Display', serif;
+    /* font-family: 'DM Serif Text', serif; */
     font-size: 2em;
     text-align: left;
     margin: 0;
 }
 
 h3{
-  	font-family: 'DM Serif Display', serif;
     font-size: 3em;
     text-align: left;
     margin:0;
 	line-height: 1.1;
+	letter-spacing: -.3px;
+	font-weight: 400;
 }
 
 h4 {
 	font-size: 1.4em;
-	margin-top: 0;
-	margin-bottom: 1vw;
-	font-weight: 400;
+	margin: 0 0 1vw 0;
+	font-weight: 200;
 	font-style: italic;
 	line-height: 1.6;
+	letter-spacing: -.3px;
 }
 
 p {
@@ -49,6 +52,11 @@ p {
 	margin: 4vw;
 }
 
+.projectLabel > p{
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
 .header {
 	width: 100%;
 	max-width: 1600px;
@@ -59,27 +67,39 @@ p {
 }
 
 .work {
-	width: 8%; 
-	text-align: left;
-	font-size: 1.1em;
+	width: 15%; 
+	text-align: right;
+	font-size: 1.2em;
 	margin-left: .5%;
-	order: 1;
+	order: 2;
+	font-weight: 300;
 }
 
 .name {
-	width: 85%;
+	width: 80%;
     font-family: 'DM Serif Display', serif;
-    font-size: 2.5em;
-    text-align: center;
-	order: 2;
+    text-align: left;
+	order: 1;
+}
+
+.name-img {
+	width: 70%;
+  	order: 1;
+}
+
+.name-img >img{
+	width: 10%;
+	order: 1;
+	margin-top: 1em;
 }
 
 .about {
 	width: 8%; 
 	text-align: right;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	margin-right: .5%;
 	order: 3;
+	font-weight: 300;
 }
 
 a {
@@ -89,11 +109,11 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #919191;
+    color: #ababab;
 }
 
 .header p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
 }
@@ -105,27 +125,21 @@ a:hover {
 	flex-flow: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin: 1em 0 0 0 0;
 }
 
 .projectWide {
     overflow: hidden;
-    height: 25vw;
-    width: 49%;
-    margin: .5%;
-}
-
-.projectXtraWide {
-    overflow: hidden;
-    height: 25vw;
-    width: 73.5%;
-    margin: .5%;
+    height: 35vw;
+    width: 63%;
+    margin: 1% 0;
 }
 
 .projectThin {
     overflow: hidden;
-    height: 25vw;
-    width: 24%;
-    margin: .5%;
+    height: 35vw;
+    width: 30.75%;
+    margin: 1% 0;
 }
 
 .description {
@@ -141,6 +155,12 @@ a:hover {
 	padding: 0 .5rem;
 	margin: 0 auto;
 	color: #333;
+	font-weight: 300;
+}
+
+.description > img {
+	width: 20px;
+	margin-bottom: 8px;
 }
 
 .type {
@@ -174,7 +194,7 @@ a:hover {
 }
 
 .projectDesc:hover {
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(255, 255, 255);
 	cursor: pointer;
 }
 
@@ -203,6 +223,7 @@ a:hover {
 	text-align: center;
 	margin-bottom: 0;
 	margin-top: 0%;
+	font-weight: 300;
 }
 
 .project > img, .projectImgs > img {
@@ -241,23 +262,34 @@ a:hover {
 /*about page*/
 #aboutSec {
 	max-width: 1600px;
-    display: flex;
-	flex-flow: row;
+	margin-bottom: 3%;	
+}
+
+#aboutCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 3%;
-	padding-left: 15%;
-	padding-right: 15%;
+}
+
+.aboutImage > img{
+	width: 100%;
+}
+
+.aboutImage {
+	width: 60%;
 }
 
 .aboutBody > img{
-	width: 100%;
-    overflow: hidden;
+	width: 15%;
 }
 
 .aboutBody {
-    width: 46%;
+	width: 60%;
     margin: 2%;
+	font-weight: 200;
+	letter-spacing: -.3px;
+	line-height: 2em;
 }
 /*about page*/
 
@@ -278,37 +310,9 @@ div.video{
 	height: 100%;
 }
 
-@media only screen and (max-width:960px) {
-	.header {
-		flex-flow: row wrap;
-	}
-	h1 {
-		margin: .5rem 0;
-	}
-	.work {
-		order: 2;
-		width: auto;
-		margin: 1rem 0;
-	}
-	.name {
-		order: 1;
-		width: 100%;
-		margin: 1rem 0;
-	}
-	.about {
-		order: 3;
-		width: auto;
-		margin: 1rem 0;
-	}
-}
+
 
 @media only screen and (max-width:960px) {
-	.header {
-		flex-flow: row wrap;
-	}
-	h1 {
-		margin: .5rem 0;
-	}
 	
 	h3 {
 		font-size: 2em;
@@ -318,6 +322,44 @@ div.video{
 		font-size: 1.1em;
 	}
 	
+	.projectLabel > p{
+		font-size: 1em;
+	}
+	/*about page*/
+
+	.aboutImage > img{
+		width: 100%;
+	}
+
+	.aboutImage {
+		width: 60%;
+	}
+
+	.aboutBody > img{
+		width: 20%;
+	}
+
+	.aboutBody {
+		font-size: .9em; 
+	}
+
+	.about {
+		font-size: 1em;
+	}
+	
+	.work {
+		font-size: 1em;
+	}
+}
+
+/* @media only screen and (max-width:960px) {
+	.header {
+		flex-flow: row wrap;
+	}
+	h1 {
+		margin: .2rem 0;
+		font-size: 2.5em;
+	}
 	.work {
 		order: 2;
 		width: auto;
@@ -326,40 +368,29 @@ div.video{
 	.name {
 		order: 1;
 		width: 100%;
-		margin: 0;
+		margin: 1rem 0;
 	}
 	.about {
 		order: 3;
 		width: auto;
 		margin: 1rem 0;
 	}
-	
-	/*about page*/
-	#aboutSec {
-		max-width: 1600px;
-		display: block;
-		margin-bottom: 3%;
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-
-	.aboutBody {
-		width: 100%;
-		margin: 2%;
-	}
-
-
-
-}
+} */
 
 @media only screen and (max-width:760px) {
 	body {
 		width: auto;
-		padding: 2rem;
+		padding: 0rem 2rem;
 		margin: 0 auto;
 	}
+
+	.name {
+		line-height: .8;
+	}
+	
+	
 	.projectThin {
-		width: 49%;
+		width: 48%;
 		height: 58vw;
 	}
 	.projectWide {
@@ -394,13 +425,60 @@ div.video{
 @media only screen and (max-width:590px) {
 	body {
 		width: auto;
-		padding: 1.25rem;
-		margin: 0 auto;
+		padding: 1rem;
+		margin: 0;
 	}
+
+	
+ 	.header {
+		flex-flow: row wrap;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.port {
+		margin: 0 3px;
+	}
+
+	.work {
+		order: 2;
+		margin: .5rem 0;
+		width: 50%; 
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.name-img {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.name-img >img{
+		width: 20%;
+		line-height: 0;
+		padding: 0;
+		margin: 0;
+		min-width: 50px;
+		max-width: 80px;
+	}
+
+	.about {
+		width: 50%; 
+		text-align: center;
+		font-size: 1em;
+		order: 3;
+		margin: .5rem 0;
+	}
+	
+	
 	h1 {
-		font-size: 1.25em;
-		line-height: 1.1;
+		margin: 0;
+		line-height: 1;
+		font-size: 2em;
 	}
+	
 	
 	h3 {
 		font-size: 1.8em;
@@ -412,12 +490,38 @@ div.video{
 	
 	
 	#aboutSec {
-		max-width: 1600px;
-		display: block;
 		margin-bottom: 3%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+	#aboutCenter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.aboutImage > img{
+		width: 100%;
+		min-width: 100px;
+	}
+
+	.aboutImage {
+		width: 100%;
+	}
+
+	.aboutBody > img {
+		width: 30%;
+		min-width: 50px;
+	}
+	
+	.aboutBody {
+		width: 100%;
+		margin: 5% 3%; 
+		font-size: .8em;
+	}
+
 /*
 	.projectThin {
 		width: 49%;
