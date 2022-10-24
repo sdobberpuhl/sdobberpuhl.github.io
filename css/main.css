@@ -27,7 +27,7 @@ h2 {
 h3{
     font-size: 3em;
     text-align: left;
-    margin:0;
+    margin: 0;
 	line-height: 1.1;
 	letter-spacing: -.3px;
 	font-weight: 400;
@@ -459,13 +459,13 @@ div.video{
 		flex-wrap: wrap;
 	}
 
-	.name-img >img{
-		width: 20%;
+	.name-img > a img {
+		width: 30%;
 		line-height: 0;
 		padding: 0;
 		margin: 0;
 		min-width: 50px;
-		max-width: 80px;
+		max-width: 50px;
 	}
 
 	.about {
@@ -526,15 +526,26 @@ div.video{
 		font-size: .8em;
 	}
 
-/*
 	.projectThin {
-		width: 49%;
-		height: 52vw;
+		margin: 2% 0;
 	}
+	
 	.projectWide {
-		width: 100%;
-		height: 52vw;
+		margin: 2% 0;
 	}
-*/
+	
+	.projectImgs, #brandImgs {
+		margin: .5em 0 0 0;
+	}
+}
 
+@media only screen and (max-width:250px) {
+	
+	.projectThin {
+		margin: 0;
+	}
+	
+	.projectWide {
+		margin: 0;
+	}
 }
