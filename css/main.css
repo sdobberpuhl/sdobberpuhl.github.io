@@ -58,6 +58,15 @@ p {
 	font-weight: 300;
 }
 
+.projectLabel > ul{
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+li{
+	margin-bottom: 1vw;
+}
+
 .header {
 	width: 100%;
 	max-width: 1600px;
@@ -330,6 +339,14 @@ div.video{
 	}
 	
 	.projectLabel > p{
+		font-size: 1em;
+	}
+	
+	.projectLabel > ul{
+		font-size: 1em;
+	}
+	
+	li {
 		font-size: 1em;
 	}
 	/*about page*/
