@@ -7,6 +7,7 @@ body {
     margin: auto;
 	margin-bottom: 60px;
     width: 80%;
+	max-width: 1600px; 
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
 	padding: 0;
@@ -132,6 +133,7 @@ a:hover {
     height: 35vw;
     width: 63%;
     margin: 1% 0;
+	max-height: 700px;
 }
 
 .projectThin {
@@ -139,6 +141,7 @@ a:hover {
     height: 35vw;
     width: 30.75%;
     margin: 1% 0;
+	max-height: 700px;
 }
 
 .description {
